@@ -2,14 +2,16 @@ class Person {
     constructor(name, age) {
         this.name = name;
         this.age = age;
+        this.sayHello = function(){
+            console.log('Xin chao, toi la ' + this.name);
+        }
     }
 }
 
 //2 cach mo rong. c1 -> tac dong truc tiep 
-
-Person.prototype.sayHello = function() {
-    console.log('Xin chao, toi la ' + this.name);
-}
+// Person.prototype.sayHello = function() {
+//     console.log('Xin chao, toi la ' + this.name);
+// }
 
 Person.prototype.weight = 100;
 
